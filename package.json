@@ -5,12 +5,12 @@
 	"author": "Creative Tim",
 	"license": "See license in https://www.creative-tim.com/license",
 	"description": "Material UI version of Vision UI Dashboard by Creative Tim",
-	"homepage": "https://demos.creative-tim.com/vision-ui-dashboard-react/#/dashboard",
+	"homepage": "https://demos.creative-tim.com/#/dashboard",
 	"bugs": {
 		"url": "https://github.com/creativetimofficial/vision-ui-dashboard-react/issues"
 	},
 	"repository": {
-		"type": "git",
+		"type": "git",			
 		"url": "git+https://github.com/creativetimofficial/vision-ui-dashboard-react.git"
 	},
 	"dependencies": {
