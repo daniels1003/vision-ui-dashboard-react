@@ -230,14 +230,7 @@ function Dashboard() {
               </Card>
             </Grid>
           </Grid>
-        </VuiBox>
-        <Grid container spacing={3} direction="row" justifyContent="left" alignItems="stretch">
-          <Grid item xs={12} md={6} lg={8}>
-            <Projects />
-          </Grid>
-         
-        </Grid>
-      </VuiBox>
+       
       
     </DashboardLayout>
   );
