@@ -47,7 +47,7 @@ export default function data() {
 
   return {
     columns: [
-      { name: "companies", align: "left" },
+      { name: "programs", align: "left" },
       { name: "members", align: "left" },
       { name: "budget", align: "center" },
       { name: "completion", align: "center" },
@@ -55,19 +55,19 @@ export default function data() {
 
     rows: [
       {
-        companies: (
+        programs: (
           <VuiBox display="flex" alignItems="center">
             <AdobeXD size="20px" />
             <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-              Chakra Vision UI Version
+              GFE
             </VuiTypography>
           </VuiBox>
         ),
         members: (
           <VuiBox display="flex" py={1}>
             {avatars([
-              [avatar1, "Ryan Tompson"],
-              [avatar2, "Romina Hadid"],
+              [avatar1, "Chancellor Daniels"],
+              [avatar2, "Aaron Haerle"],
               [avatar3, "Alexander Smith"],
               [avatar4, "Jessica Doe"],
             ])}
@@ -81,18 +81,18 @@ export default function data() {
         completion: (
           <VuiBox width="8rem" textAlign="left">
             <VuiTypography color="white" variant="button" fontWeight="bold">
-              60%
+              78%
             </VuiTypography>
             <VuiProgress value={60} color="info" label={false} sx={{ background: "#2D2E5F" }} />
           </VuiBox>
         ),
       },
       {
-        companies: (
+        programs: (
           <VuiBox display="flex" alignItems="center">
             <Atlassian size="20px" />
             <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-              Add Progress Track
+              P3R
             </VuiTypography>
           </VuiBox>
         ),
@@ -112,18 +112,18 @@ export default function data() {
         completion: (
           <VuiBox width="8rem" textAlign="left">
             <VuiTypography color="white" variant="button" fontWeight="bold">
-              10%
+              41%
             </VuiTypography>
             <VuiProgress value={10} color="info" label={false} sx={{ background: "#2D2E5F" }} />
           </VuiBox>
         ),
       },
       {
-        companies: (
+        programs: (
           <VuiBox display="flex" alignItems="center">
             <Slack size="20px" />
             <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-              Fix Platform Errors
+              UK-E7
             </VuiTypography>
           </VuiBox>
         ),
@@ -137,31 +137,31 @@ export default function data() {
         ),
         budget: (
           <VuiTypography variant="button" color="white" fontWeight="bold">
-            Not set
+            25,600
           </VuiTypography>
         ),
         completion: (
           <VuiBox width="8rem" textAlign="left">
             <VuiTypography color="white" variant="button" fontWeight="bold">
-              100%
+              84%
             </VuiTypography>
             <VuiProgress value={100} color="info" label={false} sx={{ background: "#2D2E5F" }} />
           </VuiBox>
         ),
       },
       {
-        companies: (
+        programs: (
           <VuiBox display="flex" alignItems="center">
             <Spotify size="20px" />
             <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-              Launch our Mobile App
+              E4B
             </VuiTypography>
           </VuiBox>
         ),
         members: (
           <VuiBox display="flex" py={1}>
             {avatars([
-              [avatar4, "Jessica Doe"],
+              [avatar4, "Mario Franklin"],
               [avatar3, "Alexander Smith"],
               [avatar2, "Romina Hadid"],
               [avatar1, "Ryan Tompson"],
@@ -176,71 +176,76 @@ export default function data() {
         completion: (
           <VuiBox width="8rem" textAlign="left">
             <VuiTypography color="white" variant="button" fontWeight="bold">
-              100%
+              67%
             </VuiTypography>
             <VuiProgress value={100} color="info" label={false} sx={{ background: "#2D2E5F" }} />
           </VuiBox>
         ),
       },
-      {
-        companies: (
-          <VuiBox display="flex" alignItems="center">
-            <Jira size="20px" />
-            <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-              Add the New Pricing Page
-            </VuiTypography>
-          </VuiBox>
-        ),
-        members: (
-          <VuiBox display="flex" py={1}>
-            {avatars([[avatar4, "Jessica Doe"]])}
-          </VuiBox>
-        ),
-        budget: (
-          <VuiTypography variant="button" color="white" fontWeight="bold">
-            $500
-          </VuiTypography>
-        ),
-        completion: (
-          <VuiBox width="8rem" textAlign="left">
-            <VuiTypography color="white" variant="button" fontWeight="bold">
-              25%
-            </VuiTypography>
-            <VuiProgress value={25} color="info" label={false} sx={{ background: "#2D2E5F" }} />
-          </VuiBox>
-        ),
-      },
-      {
-        companies: (
-          <VuiBox display="flex" alignItems="center">
-            <Invision size="20px" />
-            <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
-              Redesign New Online Shop
-            </VuiTypography>
-          </VuiBox>
-        ),
-        members: (
-          <VuiBox display="flex" py={1}>
-            {avatars([
-              [avatar1, "Ryan Tompson"],
-              [avatar4, "Jessica Doe"],
-            ])}
-          </VuiBox>
-        ),
-        budget: (
-          <VuiTypography variant="button" color="white" fontWeight="bold">
-            $2,000
-          </VuiTypography>
-        ),
-        completion: (
-          <VuiBox width="8rem" textAlign="left">
-            <VuiTypography color="white" variant="button" fontWeight="bold">
-              40%
-            </VuiTypography>
-            <VuiProgress value={40} color="info" label={false} sx={{ background: "#2D2E5F" }} />
-          </VuiBox>
-        ),
-      },
+      
     ],
   };
 }
+
+/*
+
+{
+  companies: (
+    <VuiBox display="flex" alignItems="center">
+      <Jira size="20px" />
+      <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
+        Add the New Pricing Page
+      </VuiTypography>
+    </VuiBox>
+  ),
+  members: (
+    <VuiBox display="flex" py={1}>
+      {avatars([[avatar4, "Jessica Doe"]])}
+    </VuiBox>
+  ),
+  budget: (
+    <VuiTypography variant="button" color="white" fontWeight="bold">
+      $500
+    </VuiTypography>
+  ),
+  completion: (
+    <VuiBox width="8rem" textAlign="left">
+      <VuiTypography color="white" variant="button" fontWeight="bold">
+        25%
+      </VuiTypography>
+      <VuiProgress value={25} color="info" label={false} sx={{ background: "#2D2E5F" }} />
+    </VuiBox>
+  ),
+},
+{
+  companies: (
+    <VuiBox display="flex" alignItems="center">
+      <Invision size="20px" />
+      <VuiTypography pl="16px" color="white" variant="button" fontWeight="medium">
+        Redesign New Online Shop
+      </VuiTypography>
+    </VuiBox>
+  ),
+  members: (
+    <VuiBox display="flex" py={1}>
+      {avatars([
+        [avatar1, "Ryan Tompson"],
+        [avatar4, "Jessica Doe"],
+      ])}
+    </VuiBox>
+  ),
+  budget: (
+    <VuiTypography variant="button" color="white" fontWeight="bold">
+      $2,000
+    </VuiTypography>
+  ),
+  completion: (
+    <VuiBox width="8rem" textAlign="left">
+      <VuiTypography color="white" variant="button" fontWeight="bold">
+        40%
+      </VuiTypography>
+      <VuiProgress value={40} color="info" label={false} sx={{ background: "#2D2E5F" }} />
+    </VuiBox>
+  ),
+},
+*/
