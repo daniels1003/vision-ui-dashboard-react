@@ -68,68 +68,23 @@ function Dashboard() {
     <DashboardLayout>
       <DashboardNavbar />
       <VuiBox py={3}>
+        
+        
+
+        
         <VuiBox mb={3}>
           <Grid container spacing={3}>
-            <Grid item xs={12} md={6} xl={3}>
-              <MiniStatisticsCard
-                title={{ text: "chances's money", fontWeight: "regular" }}
-                count="$53,000"
-                percentage={{ color: "success", text: "+55%" }}
-                icon={{ color: "info", component: <IoWallet size="22px" color="white" /> }}
-              />
-            </Grid>
-            <Grid item xs={12} md={6} xl={3}>
-              <MiniStatisticsCard
-                title={{ text: "today's users" }}
-                count="2,300"
-                percentage={{ color: "success", text: "+3%" }}
-                icon={{ color: "info", component: <IoGlobe size="22px" color="white" /> }}
-              />
-            </Grid>
-            <Grid item xs={12} md={6} xl={3}>
-              <MiniStatisticsCard
-                title={{ text: "new clients" }}
-                count="+3,462"
-                percentage={{ color: "error", text: "-2%" }}
-                icon={{ color: "info", component: <IoDocumentText size="22px" color="white" /> }}
-              />
-            </Grid>
-            <Grid item xs={12} md={6} xl={3}>
-              <MiniStatisticsCard
-                title={{ text: "total sales" }}
-                count="$103,430"
-                percentage={{ color: "success", text: "+5%" }}
-                icon={{ color: "info", component: <FaShoppingCart size="20px" color="white" /> }}
-              />
-            </Grid>
-          </Grid>
-        </VuiBox>
-        <VuiBox mb={3}>
-          <Grid container spacing="18px">
-            <Grid item xs={12} lg={12} xl={5}>
-              <WelcomeMark />
-            </Grid>
-            <Grid item xs={12} lg={6} xl={3}>
-              <SatisfactionRate />
-            </Grid>
-            <Grid item xs={12} lg={6} xl={4}>
-              <ReferralTracking />
-            </Grid>
-          </Grid>
-        </VuiBox>
-        <VuiBox mb={3}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={6} xl={7}>
+            <Grid item xs={18} lg={12} xl={12}>
               <Card>
                 <VuiBox sx={{ height: "100%" }}>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
-                    Sales Overview
+                    Program Engineering Changes and Part Procurement: GFE
                   </VuiTypography>
                   <VuiBox display="flex" alignItems="center" mb="40px">
                     <VuiTypography variant="button" color="success" fontWeight="bold">
-                      +5% more{" "}
+                      +23% more{" "}
                       <VuiTypography variant="button" color="text" fontWeight="regular">
-                        in 2021
+                        in 2022
                       </VuiTypography>
                     </VuiTypography>
                   </VuiBox>
@@ -163,7 +118,7 @@ function Dashboard() {
                     />
                   </VuiBox>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
-                    Active Users
+                    Program Metrics GFE
                   </VuiTypography>
                   <VuiBox display="flex" alignItems="center" mb="40px">
                     <VuiTypography variant="button" color="success" fontWeight="bold">
@@ -190,11 +145,11 @@ function Dashboard() {
                           <IoWallet color="#fff" size="12px" />
                         </VuiBox>
                         <VuiTypography color="text" variant="button" fontWeight="medium">
-                          Users
+                          Engineering Change Revisions
                         </VuiTypography>
                       </Stack>
                       <VuiTypography color="white" variant="lg" fontWeight="bold" mb="8px">
-                        32,984
+                        184
                       </VuiTypography>
                       <VuiProgress value={60} color="info" sx={{ background: "#2D2E5F" }} />
                     </Grid>
@@ -214,11 +169,11 @@ function Dashboard() {
                           <IoIosRocket color="#fff" size="12px" />
                         </VuiBox>
                         <VuiTypography color="text" variant="button" fontWeight="medium">
-                          Clicks
+                          Installs
                         </VuiTypography>
                       </Stack>
                       <VuiTypography color="white" variant="lg" fontWeight="bold" mb="8px">
-                        2,42M
+                        657
                       </VuiTypography>
                       <VuiProgress value={60} color="info" sx={{ background: "#2D2E5F" }} />
                     </Grid>
@@ -238,11 +193,11 @@ function Dashboard() {
                           <FaShoppingCart color="#fff" size="12px" />
                         </VuiBox>
                         <VuiTypography color="text" variant="button" fontWeight="medium">
-                          Sales
+                          Discrepancies
                         </VuiTypography>
                       </Stack>
                       <VuiTypography color="white" variant="lg" fontWeight="bold" mb="8px">
-                        2,400$
+                        243
                       </VuiTypography>
                       <VuiProgress value={60} color="info" sx={{ background: "#2D2E5F" }} />
                     </Grid>
@@ -262,11 +217,11 @@ function Dashboard() {
                           <IoBuild color="#fff" size="12px" />
                         </VuiBox>
                         <VuiTypography color="text" variant="button" fontWeight="medium">
-                          Items
+                          Priority Parts to Order
                         </VuiTypography>
                       </Stack>
                       <VuiTypography color="white" variant="lg" fontWeight="bold" mb="8px">
-                        320
+                        97
                       </VuiTypography>
                       <VuiProgress value={60} color="info" sx={{ background: "#2D2E5F" }} />
                     </Grid>
@@ -276,18 +231,83 @@ function Dashboard() {
             </Grid>
           </Grid>
         </VuiBox>
-        <Grid container spacing={3} direction="row" justifyContent="center" alignItems="stretch">
+        <Grid container spacing={3} direction="row" justifyContent="left" alignItems="stretch">
           <Grid item xs={12} md={6} lg={8}>
             <Projects />
           </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            <OrderOverview />
-          </Grid>
+         
         </Grid>
       </VuiBox>
-      <Footer />
+      
     </DashboardLayout>
   );
 }
 
 export default Dashboard;
+
+/*
+
+<VuiBox mb={3}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={6} xl={3}>
+              <MiniStatisticsCard
+                title={{ text: "today's money", fontWeight: "regular" }}
+                count="$53,000"
+                percentage={{ color: "success", text: "+55%" }}
+                icon={{ color: "info", component: <IoWallet size="22px" color="white" /> }}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} xl={3}>
+              <MiniStatisticsCard
+                title={{ text: "today's users" }}
+                count="2,300"
+                percentage={{ color: "success", text: "+3%" }}
+                icon={{ color: "info", component: <IoGlobe size="22px" color="white" /> }}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} xl={3}>
+              <MiniStatisticsCard
+                title={{ text: "new clients" }}
+                count="+3,462"
+                percentage={{ color: "error", text: "-2%" }}
+                icon={{ color: "info", component: <IoDocumentText size="22px" color="white" /> }}
+              />
+            </Grid>
+            <Grid item xs={12} md={6} xl={3}>
+              <MiniStatisticsCard
+                title={{ text: "total sales" }}
+                count="$103,430"
+                percentage={{ color: "success", text: "+5%" }}
+                icon={{ color: "info", component: <FaShoppingCart size="20px" color="white" /> }}
+              />
+            </Grid>
+          </Grid>
+        </VuiBox>
+
+
+
+
+
+
+
+<VuiBox mb={3}>
+<Grid container spacing="18px">
+  <Grid item xs={12} lg={12} xl={5}>
+    <WelcomeMark />
+  </Grid>
+  <Grid item xs={12} lg={6} xl={3}>
+    <SatisfactionRate />
+  </Grid>
+  <Grid item xs={12} lg={6} xl={4}>
+    <ReferralTracking />
+  </Grid>
+</Grid>
+</VuiBox>
+
+went on line 273
+<Grid item xs={12} md={6} lg={4}>
+<OrderOverview />
+</Grid>
+
+<Footer />
+*/
