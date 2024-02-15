@@ -27,9 +27,12 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 
-root.render(<BrowserRouter>
+root.render(
+<React.StrictMode>
+<BrowserRouter>
   <VisionUIControllerProvider>
     <App />
   </VisionUIControllerProvider>
-</BrowserRouter>)
+</BrowserRouter>
+</React.StrictMode>)
 
