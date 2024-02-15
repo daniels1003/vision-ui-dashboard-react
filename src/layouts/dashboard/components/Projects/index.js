@@ -1,3 +1,4 @@
+
 // @mui material components
 import Tooltip from "@mui/material/Tooltip";
 
@@ -19,6 +20,7 @@ import avatar2 from "assets/images/avatar2.png";
 import avatar3 from "assets/images/avatar3.png";
 import avatar4 from "assets/images/avatar4.png";
 
+// NOTE FROM MIKE: This is not a react component, so you can't just display this directly.  Probably needs to go in a table or something.
 export default function data() {
   const avatars = (members) =>
     members.map(([image, name]) => (
@@ -182,7 +184,7 @@ export default function data() {
           </VuiBox>
         ),
       },
-      
+
     ],
   };
 }
