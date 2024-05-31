@@ -67,7 +67,7 @@ function Dashboard() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <VuiBox py={3}>
+      //<VuiBox py={3}>
 
 
 
@@ -78,7 +78,7 @@ function Dashboard() {
               <Card>
                 <VuiBox sx={{ height: "100%" }}>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
-                    Program Engineering Changes and Part Procurement: GFE
+                    Install Reconciliation Engineering Changes
                   </VuiTypography>
                   <VuiBox display="flex" alignItems="center" mb="40px">
                     <VuiTypography variant="button" color="success" fontWeight="bold">
@@ -118,7 +118,7 @@ function Dashboard() {
                     />
                   </VuiBox>
                   <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
-                    Program Metrics GFE
+                    GFE EBOM/MBOM Summary
                   </VuiTypography>
                   <VuiBox display="flex" alignItems="center" mb="40px">
                     <VuiTypography variant="button" color="success" fontWeight="bold">
@@ -169,7 +169,7 @@ function Dashboard() {
                           <IoIosRocket color="#fff" size="12px" />
                         </VuiBox>
                         <VuiTypography color="text" variant="button" fontWeight="medium">
-                          Installs
+                          Completed Installs
                         </VuiTypography>
                       </Stack>
                       <VuiTypography color="white" variant="lg" fontWeight="bold" mb="8px">
@@ -217,7 +217,7 @@ function Dashboard() {
                           <IoBuild color="#fff" size="12px" />
                         </VuiBox>
                         <VuiTypography color="text" variant="button" fontWeight="medium">
-                          Priority Parts to Order
+                          Priority Parts
                         </VuiTypography>
                       </Stack>
                       <VuiTypography color="white" variant="lg" fontWeight="bold" mb="8px">
@@ -233,14 +233,14 @@ function Dashboard() {
         </VuiBox>
         <Grid container spacing={3} direction="row" justifyContent="center" alignItems="stretch">
           <Grid item xs={12} md={6} lg={8}>
-            {/* <Projects /> */}
+            { <Projects /> }
           </Grid>
           <Grid item xs={12} md={6} lg={4}>
-            <OrderOverview />
+            //<OrderOverview />
           </Grid>
         </Grid>
       </VuiBox>
-      <Footer />
+      //<Footer />
     </DashboardLayout>
   );
 }
