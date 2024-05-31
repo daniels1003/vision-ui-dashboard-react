@@ -122,7 +122,7 @@ export default function App() {
       right="2rem"
       bottom="2rem"
       zIndex={99}
-      color="white"
+      color="black"
       sx={{ cursor: "pointer" }}
       onClick={handleConfiguratorOpen}
     >
@@ -174,7 +174,7 @@ export default function App() {
           {configsButton}
         </>
       )}
-      //{layout === "vr" && <Configurator />}
+      {layout === "vr" && <Configurator />}
       <Switch>
         {getRoutes(routes)}
         <Redirect from="*" to="/dashboard" />
