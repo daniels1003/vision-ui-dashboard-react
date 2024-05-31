@@ -67,7 +67,7 @@ function Dashboard() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      /*<VuiBox py={3}>*/
+      <VuiBox py={3}>
 
 
 
