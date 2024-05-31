@@ -164,7 +164,7 @@ export default function App() {
         <>
           <Sidenav
             color={sidenavColor}
-            brand=""
+            //brand=""
             brandName="GFE Metrics"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
@@ -174,7 +174,7 @@ export default function App() {
           {configsButton}
         </>
       )}
-      {layout === "vr" && <Configurator />}
+      //{layout === "vr" && <Configurator />}
       <Switch>
         {getRoutes(routes)}
         <Redirect from="*" to="/dashboard" />
