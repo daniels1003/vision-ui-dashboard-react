@@ -130,7 +130,7 @@ function Sidenav({ color, brandName, routes, ...rest }) {
           mb={1}
           ml={1}
         >
-          {title}
+          
         </VuiTypography>
       );
     } else if (type === "divider") {
@@ -202,7 +202,7 @@ function Sidenav({ color, brandName, routes, ...rest }) {
                 })
               }
             >
-              ///*{brandName}*/
+              // removed brandname from here in brackets
             </VuiTypography>
           </VuiBox>
         </VuiBox>
@@ -260,3 +260,7 @@ export default Sidenav;
       //     </VuiButton>
       //   </VuiBox>
       // </VuiBox>
+
+
+//{title}
+//{brandName}
