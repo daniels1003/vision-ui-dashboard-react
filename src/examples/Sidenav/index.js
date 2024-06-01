@@ -202,7 +202,7 @@ function Sidenav({ color, brandName, routes, ...rest }) {
                 })
               }
             >
-              // removed brandname from here in brackets
+          
             </VuiTypography>
           </VuiBox>
         </VuiBox>
