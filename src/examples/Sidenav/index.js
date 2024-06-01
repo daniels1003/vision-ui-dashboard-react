@@ -225,7 +225,7 @@ function Sidenav({ color, brandName, routes, ...rest }) {
           },
         })}
       >
-      
+      </VuiBox>
     </SidenavRoot>
   );
 }
