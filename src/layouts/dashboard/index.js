@@ -84,7 +84,7 @@ function Dashboard() {
                     <VuiTypography variant="button" color="success" fontWeight="bold">
                       +23% more{" "}
                       <VuiTypography variant="button" color="text" fontWeight="regular">
-                        in 2022
+                        in 2024
                       </VuiTypography>
                     </VuiTypography>
                   </VuiBox>
@@ -240,7 +240,7 @@ function Dashboard() {
           </Grid>
         </Grid>
       </VuiBox>
-      <Footer />
+        {/*<Footer /> */}
     </DashboardLayout>
   );
 }
