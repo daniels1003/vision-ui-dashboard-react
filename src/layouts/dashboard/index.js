@@ -235,9 +235,31 @@ function Dashboard() {
           <Grid item xs={12} md={6} lg={8}>
             {/*<Projects /> */}
           </Grid>
-          <Grid item xs={12} md={6} lg={4}>
-            {/* <OrderOverview /> */}
-          </Grid>
+          <VuiBox mb={3}>
+       
+            <Grid item xs={12} md={6} lg={4}>
+              <Card>
+                <VuiBox sx={{ height: "100%" }}>
+                  <VuiTypography variant="lg" color="white" fontWeight="bold" mb="5px">
+                    Install Reconciliation Engineering Changes
+                  </VuiTypography>
+                  <VuiBox display="flex" alignItems="center" mb="40px">
+                    <VuiTypography variant="button" color="success" fontWeight="bold">
+                      +23% more{" "}
+                      <VuiTypography variant="button" color="text" fontWeight="regular">
+                        in 2024
+                      </VuiTypography>
+                    </VuiTypography>
+                  </VuiBox>
+                  <VuiBox sx={{ height: "310px" }}>
+                    <LineChart
+                      lineChartData={lineChartDataDashboard}
+                      lineChartOptions={lineChartOptionsDashboard}
+                    />
+                  </VuiBox>
+                </VuiBox>
+              </Card>
+            </Grid>
         </Grid>
       </VuiBox>
         {/*<Footer /> */}
