@@ -231,10 +231,6 @@ function Dashboard() {
             </Grid>
           </Grid>
         </VuiBox>
-        <Grid container spacing={3} direction="row" justifyContent="center" alignItems="stretch">
-          <Grid item xs={12} md={6} lg={8}>
-            {/*<Projects /> */}
-          </Grid>
           <VuiBox mb={3}>
        
             <Grid item xs={12} md={6} lg={4}>
