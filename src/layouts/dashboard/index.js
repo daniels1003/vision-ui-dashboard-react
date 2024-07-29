@@ -258,7 +258,7 @@ function Dashboard() {
             </Grid>
         </Grid>
       </VuiBox>
-        {/*<Footer /> */}
+        {Footer />}
     </DashboardLayout>
   );
 }
