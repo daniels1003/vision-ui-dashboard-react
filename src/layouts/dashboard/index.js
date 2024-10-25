@@ -68,10 +68,7 @@ function Dashboard() {
     <DashboardLayout>
       <DashboardNavbar />
       <VuiBox py={3}>
-
-
-
-
+    
         <VuiBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={18} lg={12} xl={12}>
@@ -258,7 +255,7 @@ function Dashboard() {
             </Grid>
         </Grid>
       </VuiBox>
-        {Footer />}
+    
     </DashboardLayout>
   );
 }
